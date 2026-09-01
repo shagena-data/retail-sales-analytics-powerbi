@@ -1,90 +1,141 @@
-# retail-sales-analytics-powerbi
-A 3-page Power BI dashboard project covering Executive, Customer, and Product Analytics with DAX, Power Query, and interactive visualizations.
+# 📊 Retail Sales Analytics Dashboard | Power BI
 
-Retail Sales Analytics Dashboard | Power BI
-Project Overview
+> An interactive 3-page Power BI dashboard designed to analyze **retail sales performance, customer behavior, product performance, and profitability** through business-focused KPIs and advanced data visualizations.
 
-This project is an interactive Retail Sales Analytics Dashboard built in Microsoft Power BI to analyze sales performance, customer behavior, and product profitability across multiple dimensions. The dashboard is designed for business decision-makers and provides insights through a clean dark-themed interface with synchronized filters, KPI cards, and advanced visualizations.
+![Power BI](https://img.shields.io/badge/Power%20BI-Data%20Visualization-yellow)
+![Power Query](https://img.shields.io/badge/Power%20Query-ETL-blue)
+![DAX](https://img.shields.io/badge/DAX-Analytics-orange)
+![Excel](https://img.shields.io/badge/Data%20Source-Excel-green)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-The project demonstrates end-to-end Power BI skills including Power Query, data modeling, DAX, time intelligence, and dashboard design.
+---
 
-Dashboard Pages
-Executive Dashboard
+## 📌 Project Overview
 
-Provides a high-level overview of overall business performance.
+The **Retail Sales Analytics Dashboard** is an end-to-end Business Intelligence project developed using **Microsoft Power BI**.
 
-KPIs
+The objective of this project is to transform raw retail sales data into an interactive analytical solution that helps business stakeholders understand:
 
-Total Sales
-Total Profit
-Total Orders
-Average Order Value
+- 📈 Overall sales and profitability
+- 👥 Customer purchasing behavior
+- 🛍️ Product and product-line performance
+- 🌍 Geographic sales distribution
+- 💳 Payment method and customer-type trends
+- 📅 Monthly sales patterns
+- 💰 Profitability and profit-margin performance
 
-Visuals
+The dashboard consists of **three interactive analytical pages**, each designed for a specific business perspective.
 
-Monthly Sales Trend
-Sales by Product Line
-Sales by City (Map)
-Payment Method Distribution
-Customer Type Distribution
-Customer Analytics
+---
 
-Analyzes customer engagement, behavior, and satisfaction.
+# 🎯 Business Objectives
 
-KPIs
+The dashboard was developed to answer key business questions such as:
 
-Total Customers / Transactions
-Average Customer Rating
-Average Basket Size
+- What is the overall sales and profit performance?
+- Which product line generates the highest revenue?
+- Which city contributes the most sales?
+- Which customer type generates higher revenue?
+- How does customer satisfaction relate to sales?
+- Which products contribute the most revenue and profit?
+- How is profit margin performing against the target?
+- Are there noticeable monthly or seasonal sales patterns?
 
-Visuals
+---
 
-Customer Type Sales Trend (Ribbon Chart)
-Average Customer Rating (Gauge)
-Rating vs Sales by City (Scatter Chart)
-Sales by Customer Location (Map)
-Monthly Customer Revenue Heatmap
-Product Analytics
+# 📊 Dashboard Overview
 
-Evaluates product performance and profitability.
+The project contains **3 interactive dashboard pages**:
 
-KPIs
+| Dashboard | Purpose |
+|-----------|---------|
+| 🏢 **Executive Dashboard** | Overall business performance |
+| 👥 **Customer Analytics** | Customer behavior and satisfaction |
+| 🛍️ **Product Analytics** | Product performance and profitability |
 
-Total Sales
-Total Products Sold
-Average Product Price
-Profit Margin %
+---
 
-Visuals
+## 🏢 1. Executive Dashboard
 
-Product Revenue Contribution (Treemap)
-Profit Contribution by Product Line (Waterfall Chart)
-Sales Decomposition Explorer (Decomposition Tree)
-Profit Margin Achievement (Gauge)
-Monthly Product Sales Heatmap
-Dataset
-Rows: ~1,000
-Columns: 17
-Data Cleaning: No null values, no duplicate records
-Date Table: Custom DimDate table created for time intelligence
-Data Modeling
+Provides a high-level overview of the organization's overall retail performance.
 
-A Star Schema was implemented.
+### 📌 Key Performance Indicators
 
-Fact Table
+- 💰 **Total Sales**
+- 💵 **Total Profit**
+- 🧾 **Total Orders**
+- 🛒 **Average Order Value**
 
-FactSales
+### 📊 Visualizations
 
-Dimension Table
+- 📈 Monthly Sales Trend — Line Chart
+- 🛍️ Sales by Product Line — Bar Chart
+- 🌍 Sales by City — Map
+- 💳 Payment Method Distribution — Donut Chart
+- 👥 Customer Type Distribution — Donut Chart
 
-DimDate
+### 🎯 Business Purpose
 
-Relationships were configured using one-to-many cardinality between DimDate and FactSales.
+The Executive Dashboard provides decision-makers with a quick overview of business performance and highlights major sales trends and revenue contributors.
 
-DAX Measures
+---
 
-Key measures created during the project include:
+## 👥 2. Customer Analytics
 
+The Customer Analytics dashboard focuses on customer behavior, engagement, satisfaction, and purchasing patterns.
+
+### 📌 Key Performance Indicators
+
+- 👥 **Total Customers / Transactions**
+- ⭐ **Average Customer Rating**
+- 🛒 **Average Basket Size**
+
+### 📊 Visualizations
+
+- 🎀 Customer Type Sales Trend — Ribbon Chart
+- ⭐ Average Customer Rating — Gauge Chart
+- 📍 Rating vs Sales by City — Scatter Chart
+- 🌍 Sales by Customer Location — Map
+- 🔥 Monthly Customer Revenue — Heatmap
+
+### 🎯 Business Purpose
+
+This dashboard helps identify customer segments, understand purchasing behavior, analyze customer satisfaction, and discover relationships between customer ratings and sales performance.
+
+---
+
+## 🛍️ 3. Product Analytics
+
+The Product Analytics dashboard evaluates product performance, revenue contribution, and profitability.
+
+### 📌 Key Performance Indicators
+
+- 💰 **Total Sales**
+- 📦 **Total Products Sold**
+- 🏷️ **Average Product Price**
+- 📈 **Profit Margin %**
+
+### 📊 Visualizations
+
+- 🌳 Product Revenue Contribution — Treemap
+- 💧 Profit Contribution by Product Line — Waterfall Chart
+- 🔍 Sales Decomposition Explorer — Decomposition Tree
+- 🎯 Profit Margin Achievement — Gauge Chart
+- 🔥 Monthly Product Sales — Heatmap
+
+### 🎯 Business Purpose
+
+This dashboard helps identify high-performing product lines, understand profit contribution, analyze sales drivers, and monitor profitability.
+
+---
+
+# 🧮 DAX Measures
+
+Several DAX measures were created to support KPI calculations, business analysis, and time-based comparisons.
+
+### 📌 Core Measures
+
+``DAX
 Total Sales
 Total Profit
 Total Orders
@@ -94,58 +145,235 @@ Average Product Price
 Average Basket Size
 Average Customer Rating
 Profit Margin %
+
+Time Intelligence Measures
 Running Total Sales
 Month-to-Date (MTD) Sales
 Previous Month Sales
 Previous Year Sales
 YoY Growth %
-Key Business Insights
-Food and Beverages is the highest revenue-generating product line.
-Yangon contributes the largest share of sales.
-Member customers generate higher revenue than Normal customers.
-The current profit margin is approximately 4.76%, close to the business target.
-Monthly sales fluctuate across product lines, highlighting seasonal demand patterns.
-Tools & Technologies
-Microsoft Power BI
-Power Query
-DAX (Data Analysis Expressions)
-Data Modeling
+
+These measures enabled dynamic KPI cards, trend analysis, cumulative sales analysis, and period-over-period comparisons.
+
+🧱 Data Modeling
+
+A Star Schema was implemented to create a structured and efficient Power BI data model.
+
+⭐ Model Structure
+                ┌──────────────┐
+                │   DimDate    │
+                └──────┬───────┘
+                       │
+                       │ 1 : *
+                       ▼
+                ┌──────────────┐
+                │  FactSales   │
+                └──────────────┘
+Fact Table
+
+FactSales
+
+Contains transactional sales information and measurable business values.
+
+Dimension Table
+
+DimDate
+
+Contains date-related attributes used for:
+
+Year
+Month
+Month Number
 Time Intelligence
-KPI Cards
-Ribbon Chart
-Treemap
-Waterfall Chart
-Decomposition Tree
-Heatmap
-Gauge Chart
-Map Visuals
-Project Files
+Monthly trend analysis
+Relationship
+DimDate[Date]  1 ───────── *  FactSales[Date]
 
-Retail-Sales-Analytics-PowerBI/
-│
-├── Dashboard.pbix
-├── Retail_Sales_Dataset.xlsx
-├── README.md
-├── images/
-│ ├── executive_dashboard.png
-│ ├── customer_analytics.png
-│ └── product_analytics.png
-└── DAX_Measures.md
+A one-to-many relationship was implemented between the Date dimension and the Fact table.
 
-Dashboard Preview
+🔄 Data Preparation | Power Query
 
-Add screenshots of:
+Power Query was used to prepare the dataset before building the analytical model.
 
+Data Preparation Activities
+🔍 Data quality validation
+🔢 Data type verification
+📅 Date transformation
+⚠️ Error checking
+🧹 Data cleaning
+📊 Column profiling
+📆 Date dimension preparation
+Data Quality Results
+Data Quality Check	Result
+Total Rows	~1,000
+Total Columns	17
+Null Values	0
+Duplicate Records	0
+Column Validity	100%
+
+The dataset was validated before proceeding to data modeling and visualization.
+
+📈 Key Business Insights
+
+The analysis generated several useful business insights.
+
+🥇 Product Line Performance
+
+Food and Beverages emerged as the highest revenue-generating product line.
+
+🌍 Geographic Performance
+
+Yangon contributed the largest share of sales among the analyzed cities.
+
+👥 Customer Segment
+
+Member customers generated higher revenue compared with Normal customers.
+
+💰 Profitability
+
+The overall profit margin is approximately 4.76%, which is close to the defined business target.
+
+📅 Sales Trends
+
+Monthly sales fluctuate across product lines, indicating variations in purchasing patterns and potential seasonal demand.
+
+🎯 Business Value
+
+These insights can help stakeholders make better decisions related to:
+
+Product strategy
+Customer segmentation
+Regional sales performance
+Pricing
+Profitability
+Sales planning
+🛠️ Tools & Technologies
+Technology	Purpose
+🟨 Microsoft Power BI	Dashboard development & visualization
+🔄 Power Query	Data cleaning & transformation
+🧮 DAX	Measures & analytical calculations
+🧱 Data Modeling	Star Schema & relationships
+📅 Time Intelligence	Period-based analysis
+📊 Excel	Source dataset
+📊 Power BI Visualizations Used
+
+This project demonstrates a variety of Power BI visualizations beyond basic charts.
+
+📈 Line Chart
+📊 Bar Chart
+🌳 Treemap
+💧 Waterfall Chart
+🎀 Ribbon Chart
+🔍 Decomposition Tree
+🎯 Gauge Chart
+🔥 Heatmap
+🌍 Map
+⭐ KPI Cards
+🎛️ Interactive Slicers
+
+The combination of these visuals was selected based on the type of business question being analyzed rather than using the same chart type throughout the report.
+
+🎛️ Interactivity
+
+The dashboard includes interactive features designed to improve the user experience.
+
+Interactive Features
+🎛️ Slicers
+🔗 Synchronized Slicers
+📅 Date filtering
+🔍 Interactive visual filtering
+📊 Cross-filtering between visuals
+📄 Multi-page navigation
+
+These features allow users to explore the data from different business perspectives.
+
+🎨 Dashboard Design
+
+The dashboard was designed with a dark-themed business intelligence interface.
+
+Design Principles
+Clean visual hierarchy
+Consistent KPI cards
+Business-focused color usage
+Icon-based KPI presentation
+Consistent spacing and alignment
+Interactive filtering
+Clear chart titles
+Minimal visual clutter
+
+The objective was to create a dashboard that is not only visually appealing but also easy for business users to interpret.
+
+📸 Dashboard Preview
 Executive Dashboard
+
 Customer Analytics
+
 Product Analytics
 
-inside the images folder and display them in this README.
+📁 Project Structure
+retail-sales-analytics-powerbi/
+│
+├── 📊 Dashboard.pbix
+│
+├── 📗 Retail_Sales_Dataset.xlsx
+│
+├── 📄 README.md
+│
+├── 📑 DAX_Measures.md
+│
+└── 🖼️ images/
+    ├── executive_dashboard.png
+    ├── customer_analytics.png
+    └── product_analytics.png
+🚀 Skills Demonstrated
 
-Author
+This project demonstrates practical experience in:
 
+Power BI
+Power Query
+DAX
+Data Cleaning
+Data Modeling
+Star Schema
+Relationships
+Time Intelligence
+KPI Development
+Business Intelligence
+Data Visualization
+Dashboard Design
+Business Storytelling
+Interactive Reporting
+💡 Key Learning Outcomes
+
+Through this project, I strengthened my ability to:
+
+✅ Transform raw data into an analytical dataset
+
+✅ Build a structured Power BI data model
+
+✅ Create reusable DAX measures
+
+✅ Implement time-intelligence calculations
+
+✅ Design interactive multi-page dashboards
+
+✅ Select appropriate visualizations for business questions
+
+✅ Analyze customer and product performance
+
+✅ Translate data into actionable business insights
+
+✅ Present analytical findings through business storytelling
+
+🎓 Portfolio Project
+
+This project was developed as part of my Data Analytics Portfolio to demonstrate practical, end-to-end Business Intelligence skills.
+
+The project combines data preparation, data modeling, DAX, visualization, dashboard design, and business analysis into a single Power BI solution.
+
+👩‍💻 Author
 Shagena
 
-Aspiring Data Analyst | SQL | Excel | Python | Pandas | NumPy | Power BI | DAX
+Aspiring Data Analyst
 
-This project was created as part of my data analytics portfolio to demonstrate end-to-end business intelligence and dashboard development skills.
+📊 SQL | Excel | Python | Pandas | NumPy | Power BI | DAX | Data Analytics
