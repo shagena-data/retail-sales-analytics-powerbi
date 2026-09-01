@@ -55,6 +55,22 @@ The project contains **3 interactive dashboard pages**:
 
 ---
 
+# 📸 Dashboard Preview
+
+## 🏢 Executive Dashboard
+
+![Executive Dashboard](images/executive_dashboard.png)
+
+## 👥 Customer Analytics
+
+![Customer Analytics](images/customer_analytics.png)
+
+## 🛍️ Product Analytics
+
+![Product Analytics](images/product_analytics.png)
+
+---
+
 ## 🏢 1. Executive Dashboard
 
 Provides a high-level overview of the organization's overall retail performance.
