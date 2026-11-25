@@ -67,7 +67,7 @@ The project contains **3 interactive dashboard pages**:
 
 ## 🛍️ Product Analytics
 
-![Product Analytics](images/Screenshot 2026-08-04 182810.png)
+![Product Analytics](images/product_analytics.png)
 
 ---
 
