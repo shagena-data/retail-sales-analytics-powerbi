@@ -63,7 +63,7 @@ The project contains **3 interactive dashboard pages**:
 
 ## 👥 Customer Analytics
 
-![Customer Analytics]("E:\Data_Analytics_Portfolio\Images\customer_analytics.png")
+![Customer Analytics](images\customer_analytics.png)
 
 ## 🛍️ Product Analytics
 
